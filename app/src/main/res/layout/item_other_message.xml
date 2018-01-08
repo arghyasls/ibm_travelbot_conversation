@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item_other_message.xml- for bot message -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/chatMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor= "#ffffff"
+        app:cmv_backgroundColorPressed= "#ffffff"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="3"
+            android:src="@drawable/bot" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView3"
+            android:layout_centerVertical="true"
+            android:text="Helloworld"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp" />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+</LinearLayout>
